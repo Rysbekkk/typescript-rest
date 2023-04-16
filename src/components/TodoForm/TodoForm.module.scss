@@ -1,0 +1,80 @@
+@import '../../App.scss';
+
+@mixin transition($property, $duration, $timing-function) {
+    transition: $property $duration $timing-function;
+}
+
+.todoForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: $font-family;
+    padding: 2rem;
+
+    h2 {
+        margin: 0 0 1rem 0;
+        color: #2D73C0;
+
+        span:first-child {
+            color: $light-color;
+        }
+
+        span:last-child {
+            color: $success-color;
+        }
+    }
+
+    form {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        input[type='text'] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            font-family: $font-family;
+            border: 2px solid $secondary-color;
+            outline: none;
+            background-color: transparent;
+            color: $dark-color;
+
+            @include transition(all, 0.3s, ease);
+
+            &:focus {
+                border-color: $primary-color;
+                box-shadow: 0 0 5px rgba($primary-color, 0.3);
+            }
+        }
+
+        button[type='submit'] {
+            width: 100%;
+            padding: 10px 30px;
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            background-color: $primary-color;
+            color: $light-color;
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:disabled {
+                background-color: darken($primary-color, 20%);
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            @include transition(all, 0.3s, ease);
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+}

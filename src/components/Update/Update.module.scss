@@ -1,0 +1,41 @@
+@import '../../App.scss';
+
+.update {
+    font-family: $font-family;
+    padding: 8px 12px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+
+}
+
+.delete {
+    background-color: $primary-color;
+    color: $light-color;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+.done {
+    background-color: $success-color;
+    color: $light-color;
+
+    &:hover {
+        background-color: darken($success-color, 10%);
+    }
+}
+
+.edit {
+    background-color: $info-color;
+    color: $light-color;
+
+    &:hover {
+        background-color: darken($info-color, 10%);
+    }
+}

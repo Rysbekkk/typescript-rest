@@ -1,0 +1,12 @@
+@import '../../App.scss';
+
+.date {
+    margin-bottom: 15px;
+
+    p {
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: 300;
+        color: $dark-color;
+    }
+}

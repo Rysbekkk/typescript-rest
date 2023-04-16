@@ -1,0 +1,32 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 2rem;
+
+    button {
+        text-transform: uppercase;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin: 0 0 0.5rem 0;
+        color: chocolate;
+    }
+
+    input,
+    button {
+        padding: 1rem;
+    }
+}

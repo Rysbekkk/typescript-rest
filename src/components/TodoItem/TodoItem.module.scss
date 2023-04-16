@@ -1,0 +1,39 @@
+@import '../../App.scss';
+
+.todoItem {
+    font-family: $font-family;
+    background-color: $light-color;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    span {
+        display: block;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: $dark-color;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        font-weight: 400;
+
+    }
+
+    .success {
+        color: $success-color;
+    }
+
+    .danger {
+        color: $red-color;
+    }
+
+}
+
+.todo__third {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

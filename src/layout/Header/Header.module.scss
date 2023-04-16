@@ -1,0 +1,51 @@
+@import '../../App.scss';
+
+.header {
+    background-color: $primary-color;
+    padding: 20px 0;
+}
+
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+            color: $light-color;
+            font-family: $font-family;
+            font-weight: 700;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+
+            span {
+                color: darken($light-color, 20%);
+                margin-right: 5px;
+            }
+        }
+    }
+
+    button {
+        font-family: $font-family;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 8px 12px;
+        background-color: $light-color;
+        color: $primary-color;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: darken($light-color, 10%);
+        }
+    }
+}
